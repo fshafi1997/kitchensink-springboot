@@ -14,7 +14,7 @@ This is a migration of kitchensink from JBOSS EAP to Spring Boot
 ### Cloning the Repository
 
 ```bash
-git clone <repository_url>
+gh repo clone fshafi1997/kitchensink-springboot
 cd kitchensink-springboot
 ```
 
