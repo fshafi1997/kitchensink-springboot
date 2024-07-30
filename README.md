@@ -29,6 +29,11 @@ mvn clean package
 mvn spring-boot:run
 ```
 
+### Running the tests
+```
+mvn test
+```
+
 ### Access the application
 Open your browser and navigate to:
 
