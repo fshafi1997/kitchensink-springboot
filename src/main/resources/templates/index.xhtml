@@ -39,6 +39,7 @@
         <th>Email</th>
         <th>Phone #</th>
         <th>REST URL</th>
+        <th>Remove Entry</th>
     </tr>
     </thead>
     <tbody>
@@ -49,6 +50,12 @@
         <td th:text="${member.phoneNumber}">Phone Number</td>
         <td>
             <a th:utext="'/rest/members/' + ${member.id}">/rest/members/{id}</a>
+        </td>
+        <td>
+            <!-- Add a form for deleting the member -->
+            <form th:action="@{'/members/' + ${member.id} + '/delete'}" method="post">
+                <button type="submit">Remove</button>
+            </form>
         </td>
     </tr>
     </tbody>
